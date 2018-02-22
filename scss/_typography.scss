@@ -1,0 +1,27 @@
+body {
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+h2 {
+    font-size: 1.8em;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: 'Arsenal', sans-serif;
+
+}
+
+h3 {
+    margin: 3em 2em 2em 2em;
+    color: $high01;
+    font-weight: 700;
+}
+
+.statement p {
+    margin: 2em;
+}
+
+.slogan p {
+    color: $high01;
+    font-size: 2em;
+    font-weight: 700;
+}

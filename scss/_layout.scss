@@ -1,0 +1,193 @@
+// Navigation
+
+nav {
+    display: block;
+    width: 100%;
+    position: fixed;
+    background: rgba(255, 255, 255, 0.5);
+    text-align: right;
+    top: 0;
+    margin: 0;
+    padding: 0.5em;
+    z-index: 9999;
+}
+
+ul {
+   list-style: none;
+   display: inline;
+   padding: 0 3em;
+   margin: 0;
+   menu {
+    padding: 0 6em;
+}
+li {
+    display: inline;
+    margin: 0.5em;
+}
+}
+
+//
+
+.myicons{
+    padding: 15%;
+}
+
+.slogan {
+    text-align: right;
+    width: 100%;
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+}
+
+// Divs with images as background
+
+.bgimage {
+    width: 100%;
+    background: url(../img/title.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    position: relative;
+    height: 800px;
+}
+
+// Skills panel
+
+.wrapper3 {
+    color: #fff;
+    background: url(../img/skillsbg.svg) no-repeat;
+    background-size: cover;
+    background-position: top; 
+    position: relative;
+    top: -150px;
+    margin: 0;
+    padding: 9em 0 12em;
+    min-height: 760px; 
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#skills h2 {
+    color: #fff;
+}
+
+#html, #js, #ps, #xd, #css, #wp, #ai, #ind {
+    color: $high01;
+    background-color: rgba(255, 255, 255, 0.6); 
+    border-radius: 50%; /* the magic */
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    text-align: center;
+    font-weight: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#html {
+    font-size: 2em;
+    height: 5em;
+    width: 5em;
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 12%;
+}
+
+#js {
+    font-size: 1.5em;
+    height: 5em;
+    width: 5em;
+    text-align: center;
+    position: absolute;
+    top: 60%;
+    left: 9%;
+}
+
+#ps {
+    font-size: 1.5em;
+    height: 5.5em;
+    width: 5.5em;
+    text-align: center;
+    position: absolute;
+    top: 46%;
+    left: 30%;
+}
+
+#xd {
+    font-size: 1.5em;
+    height: 5.5em;
+    width: 5.5em;
+    text-align: center;
+    position: absolute;
+    top: 68%;
+    left: 22%;
+}
+
+#css {
+    font-size: 2em;
+    height: 5em;
+    width: 5em;
+    text-align: center;
+    position: absolute;
+    top: 57%;
+    left: 46%;
+}
+
+#wp {
+    font-size: 1.5em;
+    height: 5.5em;
+    width: 5.5em;
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 60%;
+}
+
+#ind {
+    font-size: 1.5em;
+    height: 6em;
+    width: 6em;
+    text-align: center;
+    position: absolute;
+    top: 32%;
+    right: 10%;
+}
+
+#ai {
+    font-size: 2em;
+    height: 6.5em;
+    width: 6.5em;
+    text-align: center;
+    position: absolute;
+    top: 55%;
+    right: 15%;
+}
+
+// Contact
+
+#contact {
+    position: relative;
+    text-align: center;
+    margin: 5em;
+}
+
+.cta {
+   background: linear-gradient(to bottom right, $high02, $high01);
+   padding: 0.6em 1.2em;
+   color: #fff;
+   border-radius: 1.2em;
+   font-size: 2em;
+   text-transform: capitalize;
+   cursor: pointer;
+}
+
+// Footer
+
+footer {
+    position: relative;
+    text-align: center;
+    padding: 1em;
+}

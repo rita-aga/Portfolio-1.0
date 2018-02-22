@@ -1,0 +1,26 @@
+// Girls
+
+.wrapper1 {
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    padding: 6em 1em 1em 1em;
+    div{
+        padding: 1em;
+    }
+}
+
+// Icons
+
+.wrapper2 {
+    background: url(../img/3pointsbg.svg) no-repeat;
+    background-size: cover;
+    background-position: top;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    margin: 0;
+    padding: 15em 0 10em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
