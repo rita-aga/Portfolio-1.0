@@ -69,7 +69,7 @@ li {
     top: -150px;
     margin: 0;
     padding: 9em 0 12em;
-    min-height: 760px; 
+    min-height: 800px; 
     text-align: center;
     width: 100%;
     box-sizing: border-box;
@@ -182,10 +182,30 @@ li {
     right: 15%;
 }
 
+// Projects
+
+#projects {
+    background: url(../img/projectsbg.svg) no-repeat;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    top: -550px;
+    margin: 0;
+    padding: 30em 0 0 0;
+    min-height: 400px; 
+    text-align: center;
+}
+
+.wrapper4 {
+    position: relative;
+    top: -400px;
+}
+
 // Contact
 
 #contact {
     position: relative;
+    top: -250px;
     text-align: center;
     margin: 5em;
 }

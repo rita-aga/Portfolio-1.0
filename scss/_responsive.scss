@@ -2,12 +2,33 @@
     .bgimage {
         height: 600px;
     }
+
+    #projects {
+        top: -500px;
+        padding: 25em 0 0 0;
+    }
+}
+
+@media (max-width: 1000px){
+    #projects {
+        top: -450px;
+        padding: 20em 0 0 0;
+    }
+
+    .wrapper4{
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 
 @media (max-width: 700px){
     #desktopnav{
        display: none;
+   }
+
+   #projects {
+    top: -400px;
+    padding: 17em 0 0 0;
    }
 
    .button_container {
@@ -25,6 +46,10 @@
 
    .wrapper2{
    display: grid;
+    grid-template-columns: 1fr;
+   }
+
+   .wrapper4{
     grid-template-columns: 1fr;
    }
 

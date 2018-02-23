@@ -355,7 +355,7 @@ ul {
   top: -150px;
   margin: 0;
   padding: 9em 0 12em;
-  min-height: 760px;
+  min-height: 800px;
   text-align: center;
   width: 100%;
   box-sizing: border-box; }
@@ -457,8 +457,24 @@ ul {
   top: 55%;
   right: 15%; }
 
+#projects {
+  background: url(../img/projectsbg.svg) no-repeat;
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  top: -550px;
+  margin: 0;
+  padding: 30em 0 0 0;
+  min-height: 400px;
+  text-align: center; }
+
+.wrapper4 {
+  position: relative;
+  top: -400px; }
+
 #contact {
   position: relative;
+  top: -250px;
   text-align: center;
   margin: 5em; }
 
@@ -499,6 +515,10 @@ footer {
   position: relative;
   margin: 0;
   padding: 15em 0 10em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; }
+
+.wrapper4 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr; }
 
@@ -619,10 +639,25 @@ footer {
     left: 0; } }
 @media (max-width: 1200px) {
   .bgimage {
-    height: 600px; } }
+    height: 600px; }
+
+  #projects {
+    top: -500px;
+    padding: 25em 0 0 0; } }
+@media (max-width: 1000px) {
+  #projects {
+    top: -450px;
+    padding: 20em 0 0 0; }
+
+  .wrapper4 {
+    grid-template-columns: 1fr 1fr; } }
 @media (max-width: 700px) {
   #desktopnav {
     display: none; }
+
+  #projects {
+    top: -400px;
+    padding: 17em 0 0 0; }
 
   .button_container {
     visibility: visible; }
@@ -636,6 +671,9 @@ footer {
 
   .wrapper2 {
     display: grid;
+    grid-template-columns: 1fr; }
+
+  .wrapper4 {
     grid-template-columns: 1fr; }
 
   #html, #js, #ps, #xd, #css, #wp, #ai, #ind, #sass {
