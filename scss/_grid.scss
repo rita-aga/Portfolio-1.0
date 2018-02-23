@@ -4,10 +4,13 @@
     width: 100%;
     box-sizing: border-box;
     position: relative;
-    padding: 6em 1em 1em 1em;
+    padding: 6em 3em 3em 3em;
+    margin: auto;
     div{
         padding: 1em;
     }
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 // Icons
@@ -24,3 +27,4 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
+

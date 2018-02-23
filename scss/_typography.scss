@@ -1,12 +1,19 @@
 body {
-    font-family: 'Didact Gothic', sans-serif;
+    font-family: $plaintext;
+}
+
+a {
+    color: $high01;
+    &:hover {
+        color: $main01;
+    }
 }
 
 h2 {
     font-size: 1.8em;
     font-weight: 800;
     text-transform: uppercase;
-    font-family: 'Arsenal', sans-serif;
+    font-family: $headline;
 
 }
 
@@ -14,6 +21,9 @@ h3 {
     margin: 3em 2em 2em 2em;
     color: $high01;
     font-weight: 700;
+    text-transform: uppercase;
+    font-family: $headline;
+    font-size: 1.5em;
 }
 
 .statement p {
@@ -24,4 +34,13 @@ h3 {
     color: $high01;
     font-size: 2em;
     font-weight: 700;
+    font-family: $headline;
+}
+
+.intro {
+    font-size: 1.5em;
+    p{
+        padding: 1em;
+    }
+    
 }

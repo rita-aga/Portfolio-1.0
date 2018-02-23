@@ -4,8 +4,12 @@
    }
 
    .button_container {
-       visibility: visible;
-       
+       visibility: visible; 
+   }
+
+   .wrapper1 {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
    }
 
    .wrapper2{
@@ -13,7 +17,7 @@
     grid-template-columns: 1fr;
    }
 
-   #html, #js, #ps, #xd, #css, #wp, #ai, #ind {
+   #html, #js, #ps, #xd, #css, #wp, #ai, #ind, #sass {
     color: $high01;
     background-color: rgba(255, 255, 255, 0.6); 
     border-radius: 1em;
@@ -46,4 +50,12 @@
         cursor: pointer;
      }
 
+}
+
+
+@media (max-width: 500px){
+    .wrapper1 {
+        display: grid;
+        grid-template-columns: 1fr;
+        }
 }

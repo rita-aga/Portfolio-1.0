@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Arsenal|Didact+Gothic|Handlee");
 button, [type='button'], [type='reset'], [type='submit'] {
   appearance: none;
   background-color: #1565c0;
@@ -255,25 +256,32 @@ a {
 * {
   margin: 0;
   padding: 0;
-  color: #555;
   box-sizing: border-box; }
 
 body {
   text-align: center; }
 
 body {
-  font-family: 'Didact Gothic', sans-serif; }
+  font-family: "Didact Gothic", sans-serif; }
+
+a {
+  color: #F2499D; }
+  a:hover {
+    color: #73E5A1; }
 
 h2 {
   font-size: 1.8em;
   font-weight: 800;
   text-transform: uppercase;
-  font-family: 'Arsenal', sans-serif; }
+  font-family: "Arsenal", sans-serif; }
 
 h3 {
   margin: 3em 2em 2em 2em;
   color: #F2499D;
-  font-weight: 700; }
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Arsenal", sans-serif;
+  font-size: 1.5em; }
 
 .statement p {
   margin: 2em; }
@@ -281,7 +289,13 @@ h3 {
 .slogan p {
   color: #F2499D;
   font-size: 2em;
-  font-weight: 700; }
+  font-weight: 700;
+  font-family: "Arsenal", sans-serif; }
+
+.intro {
+  font-size: 1.5em; }
+  .intro p {
+    padding: 1em; }
 
 nav {
   display: block;
@@ -315,6 +329,11 @@ ul {
   bottom: 5%;
   right: 5%; }
 
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
 .bgimage {
   width: 100%;
   background: url(../img/title.png) no-repeat;
@@ -341,7 +360,7 @@ ul {
 #skills h2 {
   color: #fff; }
 
-#html, #js, #ps, #xd, #css, #wp, #ai, #ind {
+#html, #js, #ps, #xd, #css, #wp, #ai, #ind, #sass {
   color: #F2499D;
   background-color: rgba(255, 255, 255, 0.6);
   border-radius: 50%;
@@ -396,7 +415,16 @@ ul {
   width: 5em;
   text-align: center;
   position: absolute;
-  top: 57%;
+  top: 65%;
+  left: 46%; }
+
+#sass {
+  font-size: 2em;
+  height: 4em;
+  width: 4em;
+  text-align: center;
+  position: absolute;
+  top: 45%;
   left: 46%; }
 
 #wp {
@@ -439,6 +467,9 @@ ul {
   font-size: 2em;
   text-transform: capitalize;
   cursor: pointer; }
+  .cta:hover {
+    background: linear-gradient(to bottom right, #7A45E5, #73E5A1);
+    color: #fff; }
 
 footer {
   position: relative;
@@ -449,7 +480,10 @@ footer {
   width: 100%;
   box-sizing: border-box;
   position: relative;
-  padding: 6em 1em 1em 1em; }
+  padding: 6em 3em 3em 3em;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; }
   .wrapper1 div {
     padding: 1em; }
 
@@ -570,6 +604,8 @@ footer {
   #burgersocial span {
     padding: 0 0.2em;
     font-size: 0.8em; }
+    #burgersocial span a {
+      color: #FFF; }
 
 @keyframes fadeInRight {
   0% {
@@ -585,11 +621,15 @@ footer {
   .button_container {
     visibility: visible; }
 
+  .wrapper1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+
   .wrapper2 {
     display: grid;
     grid-template-columns: 1fr; }
 
-  #html, #js, #ps, #xd, #css, #wp, #ai, #ind {
+  #html, #js, #ps, #xd, #css, #wp, #ai, #ind, #sass {
     color: #F2499D;
     background-color: rgba(255, 255, 255, 0.6);
     border-radius: 1em;
@@ -617,5 +657,9 @@ footer {
     font-size: 1.5em;
     text-transform: capitalize;
     cursor: pointer; } }
+@media (max-width: 500px) {
+  .wrapper1 {
+    display: grid;
+    grid-template-columns: 1fr; } }
 
 /*# sourceMappingURL=style.css.map */

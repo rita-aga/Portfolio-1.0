@@ -149,6 +149,9 @@ $button-width: 35px;
  span{
    padding: 0 0.2em;
    font-size: 0.8em;
+   a {
+    color: $color-link;
+   }
 }
 color: $color-link;
 }
