@@ -9,6 +9,13 @@ a {
     }
 }
 
+#typed {
+    color: $high01;
+    font-size: 2em;
+    font-weight: 700;
+    font-family: $headline;
+}
+
 h2 {
     font-size: 1.8em;
     font-weight: 800;
@@ -30,13 +37,6 @@ h3 {
     margin: 2em;
     font-size: 1.2em;
     color: darken($main01, $amount: 40);
-}
-
-.slogan p {
-    color: $high01;
-    font-size: 2em;
-    font-weight: 700;
-    font-family: $headline;
 }
 
 .intro {

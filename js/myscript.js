@@ -7,3 +7,11 @@ $('.menu').click(function() {
     $('#toggle').toggleClass('active');
     $('#overlay').toggleClass('open');
    });
+
+   var typed = new Typed('#typed', {
+    stringsElement: '#typed-strings',
+    typeSpeed: 200,
+    backSpeed: 200,
+    loop: true,
+    loopCount: Infinity
+  });
