@@ -18,9 +18,9 @@ h2 {
 }
 
 h3 {
-    margin: 3em 2em 2em 2em;
+    margin: 1em 2em 2em 2em;
     color: $high01;
-    font-weight: 700;
+    font-weight: 1000;
     text-transform: uppercase;
     font-family: $headline;
     font-size: 1.5em;
@@ -28,6 +28,8 @@ h3 {
 
 .statement p {
     margin: 2em;
+    font-size: 1.2em;
+    color: darken($main01, $amount: 40);
 }
 
 .slogan p {
@@ -42,5 +44,5 @@ h3 {
     p{
         padding: 1em;
     }
-    
+    color: darken($neutral, $amount: 50)
 }

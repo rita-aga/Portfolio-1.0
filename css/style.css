@@ -276,15 +276,17 @@ h2 {
   font-family: "Arsenal", sans-serif; }
 
 h3 {
-  margin: 3em 2em 2em 2em;
+  margin: 1em 2em 2em 2em;
   color: #F2499D;
-  font-weight: 700;
+  font-weight: 1000;
   text-transform: uppercase;
   font-family: "Arsenal", sans-serif;
   font-size: 1.5em; }
 
 .statement p {
-  margin: 2em; }
+  margin: 2em;
+  font-size: 1.2em;
+  color: #16763d; }
 
 .slogan p {
   color: #F2499D;
@@ -293,7 +295,8 @@ h3 {
   font-family: "Arsenal", sans-serif; }
 
 .intro {
-  font-size: 1.5em; }
+  font-size: 1.5em;
+  color: #6b6b6b; }
   .intro p {
     padding: 1em; }
 
@@ -320,7 +323,7 @@ ul {
     margin: 0.5em; }
 
 .myicons {
-  padding: 15%; }
+  padding: 15% 20%; }
 
 .slogan {
   text-align: right;
@@ -614,12 +617,18 @@ footer {
   100% {
     opacity: 1;
     left: 0; } }
+@media (max-width: 1200px) {
+  .bgimage {
+    height: 600px; } }
 @media (max-width: 700px) {
   #desktopnav {
     display: none; }
 
   .button_container {
     visibility: visible; }
+
+  .bgimage {
+    height: 450px; }
 
   .wrapper1 {
     display: grid;
@@ -660,6 +669,9 @@ footer {
 @media (max-width: 500px) {
   .wrapper1 {
     display: grid;
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+
+  .bgimage {
+    height: 300px; } }
 
 /*# sourceMappingURL=style.css.map */

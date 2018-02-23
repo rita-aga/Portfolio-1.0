@@ -1,3 +1,10 @@
+@media (max-width: 1200px) {
+    .bgimage {
+        height: 600px;
+    }
+}
+
+
 @media (max-width: 700px){
     #desktopnav{
        display: none;
@@ -5,6 +12,10 @@
 
    .button_container {
        visibility: visible; 
+   }
+
+   .bgimage {
+    height: 450px;
    }
 
    .wrapper1 {
@@ -58,4 +69,8 @@
         display: grid;
         grid-template-columns: 1fr;
         }
+
+    .bgimage {
+        height: 300px;
+         }
 }
