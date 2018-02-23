@@ -258,8 +258,9 @@ a {
   padding: 0;
   box-sizing: border-box; }
 
-body {
-  text-align: center; }
+body, html {
+  text-align: center;
+  height: 100%; }
 
 body {
   font-family: "Didact Gothic", sans-serif; }
@@ -329,7 +330,7 @@ ul {
   text-align: right;
   width: 100%;
   position: absolute;
-  bottom: 5%;
+  bottom: 15%;
   right: 5%; }
 
 .intro {
@@ -338,13 +339,18 @@ ul {
   justify-content: center; }
 
 .bgimage {
-  width: 100%;
+  position: relative;
   background: url(../img/title.png) no-repeat;
   background-size: cover;
-  background-position: center;
-  z-index: -1;
-  position: relative;
-  height: 800px; }
+  background-position: top center;
+  width: 100%;
+  height: 100vh;
+  bottom: 0;
+  overflow: hidden;
+  background-attachment: fixed;
+  background-color: #fff;
+  margin: 0;
+  padding: 0; }
 
 .wrapper3 {
   color: #fff;
@@ -637,10 +643,40 @@ footer {
   100% {
     opacity: 1;
     left: 0; } }
-@media (max-width: 1200px) {
-  .bgimage {
-    height: 600px; }
+.project_container {
+  position: relative; }
 
+.projectimage {
+  display: block;
+  width: 100%;
+  height: auto; }
+
+.projectoverlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(242, 73, 157, 0.8); }
+
+.project_container:hover .projectoverlay {
+  opacity: 1; }
+
+.projecttext {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center; }
+
+@media (max-width: 1200px) {
   #projects {
     top: -500px;
     padding: 25em 0 0 0; } }
@@ -648,6 +684,10 @@ footer {
   #projects {
     top: -450px;
     padding: 20em 0 0 0; }
+
+  .wrapper1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
 
   .wrapper4 {
     grid-template-columns: 1fr 1fr; } }
@@ -667,7 +707,7 @@ footer {
 
   .wrapper1 {
     display: grid;
-    grid-template-columns: 1fr 1fr; }
+    grid-template-columns: 1fr; }
 
   .wrapper2 {
     display: grid;
@@ -705,10 +745,6 @@ footer {
     text-transform: capitalize;
     cursor: pointer; } }
 @media (max-width: 500px) {
-  .wrapper1 {
-    display: grid;
-    grid-template-columns: 1fr; }
-
   .bgimage {
     height: 300px; } }
 

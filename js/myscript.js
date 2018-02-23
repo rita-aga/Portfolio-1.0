@@ -3,7 +3,7 @@ $('#toggle').click(function() {
     $('#overlay').toggleClass('open');
    });
 
-   $('.menu').click(function() {
+$('.menu').click(function() {
     $('#toggle').toggleClass('active');
     $('#overlay').toggleClass('open');
    });

@@ -1,7 +1,5 @@
 @media (max-width: 1200px) {
-    .bgimage {
-        height: 600px;
-    }
+
 
     #projects {
         top: -500px;
@@ -14,6 +12,11 @@
         top: -450px;
         padding: 20em 0 0 0;
     }
+
+    .wrapper1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        }
 
     .wrapper4{
         grid-template-columns: 1fr 1fr;
@@ -40,9 +43,9 @@
    }
 
    .wrapper1 {
-   display: grid;
-   grid-template-columns: 1fr 1fr;
-   }
+    display: grid;
+    grid-template-columns: 1fr;
+    }
 
    .wrapper2{
    display: grid;
@@ -90,10 +93,6 @@
 
 
 @media (max-width: 500px){
-    .wrapper1 {
-        display: grid;
-        grid-template-columns: 1fr;
-        }
 
     .bgimage {
         height: 300px;
