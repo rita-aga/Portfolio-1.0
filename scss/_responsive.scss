@@ -1,7 +1,14 @@
+@media (max-width: 1400px) {
+    .bgimage {
+        background-attachment: initial;
+    }
+}
+
 @media (max-width: 1200px) {
     .bgimage {
         height: 500px;
         background-attachment: initial;
+
        }
 
     #projects {

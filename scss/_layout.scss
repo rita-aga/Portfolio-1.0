@@ -50,13 +50,17 @@ li {
 
 .bgimage {
     position: relative;
-    background: url(../img/title.png) no-repeat;
-    background-size: cover;
+    background-image: url(../img/title02.jpg);
+    background-repeat: no-repeat;
     background-position: top center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     width: 100%;
     height:100vh;
-    bottom: 0;
     overflow: hidden;
+    bottom: 0;
     background-attachment: fixed;
     background-color: #fff;
     margin: 0;

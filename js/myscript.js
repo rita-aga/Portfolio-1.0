@@ -15,3 +15,9 @@ $('.menu').click(function() {
     loop: true,
     loopCount: Infinity
   });
+
+  var rellax = new Rellax('.rellax', {
+    center: true,
+    round: true,
+    vertical: true
+  });

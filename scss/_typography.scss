@@ -16,6 +16,29 @@ a {
     font-family: $headline;
 }
 
+.typed-cursor {
+    color: $high01;
+    font-size: 2em;
+    font-weight: 700;
+    font-family: $headline;
+    -webkit-animation: blinker 1s linear infinite;
+    animation: blinker 1s linear infinite;
+}
+
+@-webkit-keyframes blinker {
+ 50% {
+ opacity: 0;
+ -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; 
+ }
+}
+
+@keyframes blinker {
+ 50% {
+ opacity: 0;
+ -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+ }
+}
+
 h2 {
     font-size: 1.8em;
     font-weight: 800;
